@@ -171,7 +171,7 @@ const treatments = [
 
 function Treatments() {
   return (
-    <section id="tratamentos" className="py-24 lg:py-32">
+    <section id="tratamentos" className="py-24 lg:py-32" style={{ background: 'linear-gradient(180deg, oklch(0.955 0.012 225) 0%, oklch(0.995 0.003 230) 100%)' }}>
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
           className="max-w-2xl">
@@ -193,11 +193,11 @@ function Treatments() {
             <motion.div key={t.title} variants={fadeUp}
               className="group relative rounded-3xl bg-card border border-border/70 p-8 hover:border-primary/40 hover:-translate-y-1 hover:shadow-luxe transition-all duration-500">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-primary/10 to-mint/20 grid place-items-center text-deep group-hover:scale-110 transition-transform duration-500">
+              <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-primary/15 to-mint/30 grid place-items-center text-primary group-hover:scale-110 transition-transform duration-500">
                 <t.icon className="h-5 w-5" />
               </div>
               <h3 className="mt-6 font-display text-xl font-semibold text-deep">{t.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t.desc}</p>
+              <p className="mt-2 text-sm text-[oklch(0.40_0.05_245)] leading-relaxed">{t.desc}</p>
               <div className="mt-6 inline-flex items-center gap-1.5 text-xs font-medium text-primary opacity-0 group-hover:opacity-100 translate-x-[-4px] group-hover:translate-x-0 transition-all">
                 Saiba mais <ArrowRight className="h-3.5 w-3.5" />
               </div>

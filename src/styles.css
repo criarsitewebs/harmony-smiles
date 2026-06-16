@@ -53,6 +53,7 @@
   --mint: oklch(0.86 0.08 175);           /* verde-água suave */
   --border: oklch(0.92 0.01 230);
   --ring: oklch(0.66 0.18 250);
+  --treatments-surface: oklch(0.955 0.012 225);
 }
 
 @layer base {
